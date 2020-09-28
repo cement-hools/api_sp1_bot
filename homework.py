@@ -54,7 +54,7 @@ def main():
                 send_message(parse_homework_status(last_homework))
             current_timestamp = new_homework.get(
                 'current_date', int(time.time()))  # обновить timestamp
-            time.sleep(900)  # опрашивать раз в пять минут
+            time.sleep(900)  # опрашивать раз в 15 минут
 
         except Exception as e:
             print(f'Бот упал с ошибкой: {e}')
